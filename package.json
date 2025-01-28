@@ -1,0 +1,20 @@
+{
+  "name": "tictactoe-multiplayer",
+  "version": "1.0.0",
+  "description": "Multiplayer Tic-tac-toe game with AI mode",
+  "scripts": {
+    "start": "netlify dev",
+    "build": "cd client && npm install && npm run build",
+    "dev": "netlify dev"
+  },
+  "dependencies": {
+    "concurrently": "^8.2.2",
+    "express": "^4.18.2",
+    "socket.io": "^4.8.1",
+    "socket.io-client": "^4.8.1",
+    "netlify-cli": "^17.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

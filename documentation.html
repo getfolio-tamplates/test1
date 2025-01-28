@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-tac-toe Multiplayer Game Documentation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1, h2, h3 {
+            color: #2c3e50;
+        }
+        code {
+            background: #f8f9fa;
+            padding: 2px 5px;
+            border-radius: 3px;
+        }
+        pre {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+        .note {
+            background: #fff3cd;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 15px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tic-tac-toe Multiplayer Game Documentation</h1>
+    
+    <h2>Table of Contents</h2>
+    <ul>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#requirements">Requirements</a></li>
+        <li><a href="#installation">Installation</a></li>
+        <li><a href="#deployment">Deployment</a></li>
+        <li><a href="#customization">Customization</a></li>
+        <li><a href="#support">Support</a></li>
+    </ul>
+
+    <h2 id="features">Features</h2>
+    <ul>
+        <li>Two Game Modes:
+            <ul>
+                <li>Play vs AI - Challenge our strategic AI opponent</li>
+                <li>Play with Friends - Real-time multiplayer gaming</li>
+            </ul>
+        </li>
+        <li>Modern React-based Frontend</li>
+        <li>Real-time Socket.IO Communication</li>
+        <li>Responsive Design - Works on all devices</li>
+        <li>Easy Room Creation and Joining</li>
+        <li>Smart AI Implementation</li>
+    </ul>
+
+    <h2 id="requirements">Requirements</h2>
+    <ul>
+        <li>Node.js 18.0.0 or higher</li>
+        <li>NPM or Yarn package manager</li>
+        <li>Basic knowledge of JavaScript/React</li>
+    </ul>
+
+    <h2 id="installation">Installation</h2>
+    <h3>Local Development</h3>
+    <pre>
+# 1. Extract the downloaded files
+# 2. Install dependencies
+npm install
+
+# 3. Install client dependencies
+cd client
+npm install
+
+# 4. Install server dependencies
+cd ../server
+npm install
+
+# 5. Return to root directory and start both servers
+cd ..
+npm start
+    </pre>
+
+    <h2 id="deployment">Deployment</h2>
+    <h3>Vercel Deployment (Recommended)</h3>
+    <pre>
+# 1. Install Vercel CLI
+npm install -g vercel
+
+# 2. Login to Vercel
+vercel login
+
+# 3. Deploy
+vercel --prod
+    </pre>
+
+    <div class="note">
+        <strong>Note:</strong> The project is pre-configured for Vercel deployment with the included vercel.json configuration.
+    </div>
+
+    <h3>Custom Server Deployment</h3>
+    <p>To deploy on your own server:</p>
+    <ol>
+        <li>Set up a Node.js environment on your server</li>
+        <li>Clone/upload the project files</li>
+        <li>Install dependencies using npm install</li>
+        <li>Set up environment variables if needed</li>
+        <li>Use PM2 or similar to keep the server running:
+            <pre>npm install -g pm2
+pm2 start server/index.js</pre>
+        </li>
+    </ol>
+
+    <h2 id="customization">Customization</h2>
+    <h3>Styling</h3>
+    <p>The game's appearance can be customized by modifying:</p>
+    <ul>
+        <li><code>client/src/App.css</code> - Main styling file</li>
+        <li><code>client/src/index.css</code> - Global styles</li>
+    </ul>
+
+    <h3>Game Logic</h3>
+    <p>Core game logic can be found in:</p>
+    <ul>
+        <li><code>client/src/App.js</code> - Frontend game logic</li>
+        <li><code>server/index.js</code> - Backend multiplayer logic</li>
+    </ul>
+
+    <h3>AI Difficulty</h3>
+    <p>The AI logic can be modified in <code>client/src/App.js</code> in the makeAIMove function.</p>
+
+    <h2 id="support">Support</h2>
+    <p>For support inquiries:</p>
+    <ul>
+        <li>Email: [Your Support Email]</li>
+        <li>Response time: Within 24-48 hours</li>
+        <li>Support includes:
+            <ul>
+                <li>Installation assistance</li>
+                <li>Bug fixes</li>
+                <li>Basic customization guidance</li>
+            </ul>
+        </li>
+    </ul>
+
+    <div class="note">
+        <strong>Version:</strong> 1.0.0<br>
+        <strong>Last Updated:</strong> January 2025<br>
+        <strong>Created by:</strong> [Your Name/Company]
+    </div>
+</body>
+</html>
